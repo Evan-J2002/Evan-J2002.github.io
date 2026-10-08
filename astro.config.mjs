@@ -26,4 +26,6 @@ export default defineConfig({
     host: true,
     port: 4321,
   },
+  site: 'http://Evan-J2002.github.io',
+  base: '/my-repo',
 });
