@@ -38,8 +38,7 @@
     "onlyBuiltDependencies": [
       "@firebase/util",
       "esbuild",
-      "protobufjs",
-      "sharp"
+      "protobufjs"
     ]
   } 
 }
