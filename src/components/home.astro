@@ -1,6 +1,7 @@
 ---
 import LetterGlitch from "../React/LetterGlitch.tsx";
 import LogoWall from "../components/logoWall.astro";
+import Jobs from "../components/jobs.astro";
 import SkillsList from "../React/SkillsList.tsx";
 ---
 
@@ -40,7 +41,8 @@ import SkillsList from "../React/SkillsList.tsx";
         </p>
       </div>
     </div>
-   
+
+    <Jobs />
   </div>
 </section>
 
@@ -52,6 +54,14 @@ import SkillsList from "../React/SkillsList.tsx";
     background-clip: text;
     color: transparent;
     animation: shine 3s linear infinite;
+  }
+
+  .job-key{
+    background: linear-gradient(135deg, #e9c3ff 50%, #a476ff 75%);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   @keyframes shine {
