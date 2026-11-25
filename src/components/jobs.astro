@@ -1,4 +1,7 @@
 ---
+import SkillsList from "../React/SkillsList.tsx";
+import Jobs from "../React/Jobs.tsx"
+
 interface Job {
   title: string;
   year: string;
@@ -17,19 +20,12 @@ const jobs: Job[] = [
     employer: "City of Winnipeg - Parks & Open Spaces"
   }
 ];
+
 ---
 
 <!--- Print some job knowledge! -->
-<div class="mt-12 pt-8 border-t border-[#ffffff10]">
+<div class="mt-4 pt-8 border-t border-[#ffffff10]">
     <h5 class="text-4xl md:text-4xl font-medium mb-8 shiny-sec">Employment History</h5>
-    <div class="grid grid-cols-1 md:grid-cols-1 gap-7">
-        {
-            jobs.map((job) => (
-                <div class="group">
-                  <h6 class="text-3xl mb-2 job-key">{job.title}</h6>
-                  <span class="text-2xl text-[var(--white-icon)]">{job.year} | {job.employer}</span>
-                </div>
-            ))
-        }
-    </div>
 </div>
+<Jobs client:load/>
+<!--- <SkillsList client:load />-->
